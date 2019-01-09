@@ -1,0 +1,902 @@
+/* /////// Overall layout /////// */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+/* /////// Header  ////// */
+header {
+    background-color: rgb(21, 21, 21);
+}
+
+#nav2 {
+    display: none;
+}
+
+#nav3 {
+    display: none;
+}
+
+/* /////// Footer  /////// */
+.footer {
+    background-color: black;
+    text-align: center;
+}
+
+.footer img {
+    display: inline-block;
+    padding-bottom: .4em;
+    padding-top: .3em;
+    cursor: pointer;
+    margin-left: 2em;
+}
+
+
+
+/* /////////// Navigation part////////// */
+
+/* //// 3 bars //// */
+
+label {
+    font-size: 25px;
+    float: right;
+    cursor: pointer;
+    padding: 5px;
+    color: rgba(227, 227, 227, 0.82);
+}
+
+/* ////// Close button and menu////// */
+.overlayout {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.9;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlayout .close-btn {
+    position: absolute;
+    font-size: 40px;
+    right: 25px;
+    top: 45px;
+}
+
+.nav {
+    position: relative;
+    top: 20%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.overlayout a {
+    font-size: 20px;
+    color: #898989;
+    padding: 6px;
+    text-decoration: none;
+    display: block;
+    transition: 0.4s;
+}
+
+.overlayout a:hover {
+    color: white;
+}
+
+
+/* ////////// Logo ////////// */
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+}
+
+
+
+/* ///////// Button top ///////// */
+#Btn-top {
+    display: none;
+    position: fixed;
+    bottom: 32px;
+    right: 9px;
+    z-index: 99;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+    padding: 13px;
+    border-radius: 4px;
+}
+
+#Btn-top:hover {
+    background-color: #a5382d;
+    box-shadow: 4px 8px 13px #4a4a4a;
+}
+
+
+
+/* /////////// Text /////////// */
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    color: black;
+    background-color: transparent;
+    margin-top: 1em;
+}
+
+h2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 3em;
+}
+
+p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+
+
+/* ////////////////// INDEX PAGE /////////////// */
+
+/* //// Header name(Stefania) //// */
+
+svg {
+    width: 30%;
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 1;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+}
+
+#drawSVG,
+#drawSVG1,
+#drawSVG2,
+#drawSVG3,
+#drawSVG4,
+#drawSVG5,
+#drawSVG6,
+#drawSVG7 {
+    animation: draw 1s forwards;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#main-index img {
+    padding: 2em;
+    padding-top: 8em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* //// Logo for mobile version is hidden//// */
+
+#ind-bd img {
+    display: none;
+}
+
+/* //// See my work //// */
+a .text-index {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 200px;
+    background-color: rgb(25, 22, 22);
+}
+
+.textedit-index {
+    color: #cea525;
+    font-size: 16px;
+    padding: 14px 28px;
+    box-shadow: 4px 8px 13px #4a4a4a;
+    margin-top: 2em;
+    margin-bottom: 9em;
+}
+
+a .text-index:hover {
+    background-color: rgb(11, 11, 11);
+    box-shadow: 5px 9px 14px #4a4a4a;
+}
+
+
+#main-index {
+    background-color: rgb(29, 29, 29);
+}
+
+#main-index a {
+    text-decoration: none;
+}
+
+
+/* ///////////////// Projects page  ////////////////// */
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    transition: .5s ease;
+}
+
+.img:hover {
+    cursor: pointer;
+}
+
+a:hover .img {
+    opacity: 0.3;
+}
+
+
+.text-view {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    left: 230px;
+    padding-bottom: 180px;
+}
+
+a:hover .text-view {
+    opacity: 1;
+}
+
+.text-view:active {
+    transform: translate(-50%, -48%);
+}
+
+
+.view-hover {
+    background-color: rgba(11, 11, 11, 0.71);
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    box-shadow: 4px 8px 13px #4a4a4a;
+}
+
+
+.text h2 {
+    background-color: #f2f1f1;
+    width: 300px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.text p {
+    background-color: #f2f1f1;
+    width: 300px;
+}
+
+
+
+
+/* //////////////// About me-page  /////////////////// */
+
+#me-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    margin-top: 1em;
+}
+
+#me p {
+    text-align: center;
+    margin: 1em;
+}
+
+
+
+/* /////////////// Contact - page  ///////////////// */
+
+.text-contact {
+    color: #cea525;
+    font-size: 1.8em;
+}
+
+.contact p {
+    font-size: 1em;
+    line-height: 1.5em;
+
+}
+
+.contact p a {
+    text-decoration: none;
+}
+
+
+.contact p a:hover {
+    cursor: pointer;
+    color: black;
+}
+
+
+
+/* /////////////// Basic web - page  ///////////////// */
+/* //////////// Basic content - page  //////////////// */
+/* ///////// Basic animation - page  ///////////////// */
+/* /////////////// Basic ux - page  ///////////////// */
+
+.project img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+.project p {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+
+
+.buttons {
+    text-align: center;
+    font-size: 1em;
+}
+
+.buttons a {
+    background-color: rgba(0, 0, 0, 0.88);
+    color: rgba(255, 255, 255, 0.84);
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 125px;
+    height: 50px;
+    display: inline-block;
+    margin-bottom: .8em;
+    padding-top: 15px;
+    margin-left: 5px;
+}
+
+
+.buttons a:hover {
+    background-color: black;
+    box-shadow: 4px 8px 13px #4a4a4a;
+}
+
+
+
+
+
+/* //////// media query - medium screen sizes /////// */
+
+@media all and (min-width: 755px) {
+
+
+    /*/////// defining the grid overall layout //////*/
+
+    div.wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header-area header-area"
+            "main-area  main-area"
+            "footer-area footer-area";
+    }
+
+    header {
+        grid-area: header-area;
+    }
+
+    header label {
+        display: none;
+    }
+
+
+
+    /*////// Navigation /////*/
+
+    #nav2 {
+        display: inline-block;
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
+
+
+    #nav2 a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.3em;
+        padding-left: 68px;
+        padding-right: 40px;
+    }
+
+    #nav2 a:hover {
+        color: #cea525;
+        text-decoration: underline;
+        transition: all 1.5s;
+    }
+
+
+    #nav3 {
+        display: inline-block;
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
+
+    #nav3 a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.3em;
+        padding-left: 68px;
+        padding-right: 40px;
+    }
+
+
+    #nav3 a:hover {
+        color: #cea525;
+        text-decoration: underline;
+        transition: all 1.3s;
+    }
+
+
+    /*////// Logo /////*/
+
+    #logo {
+        display: block;
+        margin-top: -2.6em;
+        position: absolute;
+        margin-left: 20.7em;
+        box-shadow: 3px 6px 6px rgba(41, 40, 40, 0.67);
+    }
+
+
+
+    main {
+        grid-area: main-area;
+    }
+
+
+    h1 {
+        margin-top: 2em
+    }
+
+
+
+    /* ////////  layout of main  ////// */
+
+
+    /* /////////// INDEX -PAGE ////////////// */
+
+    svg {
+        display: none;
+    }
+
+    #ind-bd img {
+        display: block;
+        margin-top: -2em;
+        position: absolute;
+        margin-left: 20.7em;
+    }
+
+
+    .text-index {
+        margin-top: 6em;
+    }
+
+    .textedit-index {
+    margin-bottom: 5em;
+}
+
+    /* /////////// PROJECT -PAGE ////////////// */
+
+    li {
+        display: inline-block;
+        margin: 2em;
+    }
+
+
+    .text-view1,
+    .text-view3 {
+        left: 180px;
+    }
+
+    .text-view2,
+    .text-view4 {
+        left: 553px;
+    }
+
+
+
+    /* /////////// Basic web-page  ////////////// */
+    /* /////////// Basic content-page  //////////// */
+    /* /////// Basic animation-page  ////////////// */
+    /* /////////// Basic UX-page  ////////////// */
+
+    .page-color {
+        background-color: #cfd0cc;
+    }
+
+    .container {
+        background-color: white;
+        max-width: 620px;
+        margin: auto;
+        padding: 10px;
+        box-shadow: 0 4.1px 8.2px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.18);
+    }
+
+    /* /////// Button top /////// */
+    #Btn-top {
+        right: 10px;
+    }
+
+
+    /* ////////////// About me-page  //////////////// */
+
+    main#me-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "section1-area section2-area";
+    }
+
+    main {
+        grid-area: main-area;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+    }
+
+    h1 {
+        grid-area: section1-area;
+    }
+
+    #me {
+        grid-area: section1-area;
+    }
+
+    #me p {
+        margin-top: 10em;
+    }
+
+
+    #me-photo {
+        grid-area: section2-area;
+    }
+
+    #me-photo {
+        margin-top: 9em;
+    }
+
+
+    footer {
+        grid-area: footer-area;
+
+    }
+
+
+
+    /* /////////// Contact-page  ////////////// */
+
+    main#contact-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "section1-area section2-area";
+    }
+
+    #contact-part1 {
+        grid-area: section1-area;
+    }
+
+
+    #contact-part2 {
+        grid-area: section2-area;
+    }
+
+    .contact {
+        margin-bottom: 9em;
+    }
+}
+
+
+
+/* //////// media query - medium screen sizes /////// */
+
+@media all and (min-width:900px) {
+
+
+    /*////// Navigation /////*/
+
+    #nav2 a {
+        padding-left: 80px;
+        padding-right: 60px;
+    }
+
+    #nav3 a {
+        padding-left: 80px;
+        padding-right: 60px;
+    }
+
+
+    /*////// Logo /////*/
+    #logo {
+        margin-left: 24.3em;
+    }
+
+
+       /* /////// Button top /////// */
+    #Btn-top {
+        right: 30px;
+    }
+
+    /* ///////////INDEX PAGE /////// */
+
+    #ind-bd img {
+        margin-left: 24.3em;
+    }
+
+    #main-index img {
+        width: 400px;
+    }
+
+    .text-index {
+        margin-top: 3em;
+    }
+
+    a .text-index {
+        width: 250px;
+    }
+    .textedit-index {
+    margin-bottom: 7.2em;
+}
+
+    /* /////////// PROJECT -PAGE ////////////// */
+
+    li {
+        margin-left: 3.3em;
+        margin-right: 3.3em;
+    }
+
+    .text-view1,
+    .text-view3 {
+        left: 203px;
+    }
+
+    .text-view2,
+    .text-view4 {
+        left: 614px;
+    }
+
+
+    /* /////////// Basic web-page  ////////////// */
+    /* /////////// Basic content-page  //////////// */
+    /* /////// Basic animation-page  ////////////// */
+    /* /////////// Basic UX-page  ////////////// */
+
+    .container {
+        max-width: 640px;
+    }
+
+    /* /////////// About me-page  ////////////// */
+    #me-photo {
+    margin-top: 5em;
+}
+
+
+    /* /////////// Contact-page  ////////////// */
+
+    .contact {
+        margin-bottom: 9em;
+    }
+}
+
+
+
+
+/* //////// media query - medium screen sizes /////// */
+
+@media all and (min-width:1050px) {
+
+    /*////// Navigation /////*/
+
+    #nav2 a {
+        padding-left: 140px;
+        padding-right: 10px;
+    }
+
+    #nav3 a {
+        padding-left: 160px;
+        padding-right: 10px;
+    }
+
+    /*////// Logo /////*/
+
+    #logo {
+        margin-left: 29.7em;
+    }
+
+    /* ////////  layout of main  ////// */
+
+    /* /////////// INDEX -PAGE ////////////// */
+
+    #ind-bd img {
+        margin-left: 29.7em;
+    }
+
+
+    /* /////////// PROJECT -PAGE ////////////// */
+    li {
+        margin-left: 6em;
+        margin-right: 6em;
+    }
+
+    .text-view1,
+    .text-view3 {
+        left: 246px;
+    }
+
+    .text-view2,
+    .text-view4 {
+        left: 743px;
+    }
+
+
+    /* /////////// Basic web-page  ////////////// */
+    /* /////////// Basic content-page  //////////// */
+    /* /////// Basic animation-page  ////////////// */
+    /* /////////// Basic UX-page  ////////////// */
+
+    .container {
+        max-width: 840px;
+    }
+
+
+    /* /////// Button top /////// */
+    #Btn-top {
+        right: 40px;
+    }
+
+
+    /* /////////// About me-page  ////////////// */
+
+    #me-photo {
+        margin-bottom: 2.4em
+    }
+
+    /* /////////// Contact-page  ////////////// */
+}
+
+.contact {
+    margin-bottom: 9em;
+}
+
+
+/* //////// media query - medium screen sizes /////// */
+
+@media all and (min-width:1280px) {
+
+    /*////// Navigation /////*/
+
+    #nav2 a {
+        padding-left: 180px;
+        padding-right: 20px;
+    }
+
+    #nav3 a {
+        padding-left: 180px;
+        padding-right: 20px;
+    }
+
+    /*////// Logo /////*/
+
+    #logo {
+        margin-left: 37em;
+    }
+
+    /* ////////  layout of main  ////// */
+
+    /* /////////// INDEX -PAGE ////////////// */
+
+    #ind-bd img {
+        margin-left: 37em;
+    }
+#main-index img{
+    width: 600px;
+}
+
+    a .text-index {
+    width: 330px;
+}
+
+      /* /////////// PROJECT -PAGE ////////////// */
+    li {
+        margin-left: 9em;
+        margin-right: 9em;
+    }
+
+    .text-view1,
+    .text-view3 {
+        left: 295px;
+    }
+
+    .text-view2,
+    .text-view4 {
+        left: 886px;
+    }
+
+
+
+    /* /////////// Basic web-page  ////////////// */
+    /* /////////// Basic content-page  //////////// */
+    /* /////// Basic animation-page  ////////////// */
+    /* /////////// Basic UX-page  ////////////// */
+
+    .container {
+        max-width: 860px;
+    }
+
+    .project p {
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+
+    /* /////// Button top /////// */
+    #Btn-top {
+        right: 100px;
+    }
+
+
+    /* /////////// About me-page  ////////////// */
+
+    #me-photo {
+        margin-bottom: 2.4em;
+    }
+
+    #me p{
+
+        padding-left: 4em;
+    }
+
+    #me-page h1{
+        padding-left: 4em
+    }
+
+    /* /////////// Contact-page  ////////////// */
+}
+
+.contact {
+    margin-bottom: 11em;
+}
+
+.text-contact {
+    color: #cea525;
+    font-size: 2em;
+}
+
+.contact p {
+    font-size: 1.2em;
+
+}

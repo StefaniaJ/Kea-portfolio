@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Title of page-->
+    <title> About me. Page: 03 </title>
+</head>
+
+
+<body>
+    <header>
+
+            <label onclick="openNav()">&#9776;</label>
+
+
+        <div id="nav" class="overlayout">
+            <a href="#" class="close-btn" onclick="closeNav()">&times;</a>
+
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="projects.html"> Projects</a>
+                <a href="me.html">About me</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <!---- Nav for min-width:750px and more---->
+        <div id="nav2">
+            <a href="index.html">Home</a>
+            <a href="projects.html"> Projects</a>
+        </div>
+
+        <!---- Logo with link for home-page---->
+        <a href="index.html">
+            <img id="logo" src="images/me_logo-black.png" alt="mylogo"></a>
+
+        <!---- Nav for min-width:750px and more---->
+        <div id="nav3">
+            <a href="me.html">About me</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+
+    <main class="area-main">
+        <div class="page-color">
+            <div class="container">
+                <div class="project">
+                    <h1>Basic Web</h1>
+                    <img width="300" src="images/basicweb1a.png" alt="basic-web">
+                    <p> In this section, you will find a Swiss Style responsive website coded by basic HTML and CSS and our group project in redesigning the Exmouth View Hotel website.</p>
+                    <p>In this theme, we learned how to structure content using HTML5 and how to edit it with CSS.<br>
+                        We developed basic skills in digital communication,user interface design,user testing, and responsive web design. </p>
+                </div>
+
+                <div class="project">
+                    <h2>Responsive website</h2><br>
+
+                    <img width="300" src="images/arts-crafts.png" alt="logo">
+                    <p>Hear you can see the project that I created.It is a responsive website about the Arts and Crafts style. <br>
+                        Simple design, beautiful materials and decorations like medieval and romantic forms are main characteristics of this style and also principal guidelines followed in order to come up with this project. </p>
+
+                    <div class="buttons">
+                        <a href="http://stefania-olteanu.dk/01-web/responsive-edit/index.html" target="_blank">Web Site</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button-go to top-->
+            <button onclick="topFunction()" id="Btn-top" title="Go to top">Top</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <a href="https://www.facebook.com/Stefania.Stefiis" target="_blank">
+                <img style="width: 20px" src="images/facebook-logo_318-49940.jpg" alt="facebook-icon">
+            </a>
+
+            <a href="https://www.instagram.com/stefi_stefs/?hl=ro" target="_blank">
+                <img style="width: 20px" src="images/instaa.jpg" alt="instagram-icon">
+            </a>
+
+            <a href="https://www.linkedin.com/in/janina-stefania-olteanu-17a67216b/" target="_blank">
+                <img style="width: 20px" src="images/linkedin.jpg" alt="linkedin-icon">
+            </a>
+        </div>
+    </footer>
+    <!--Link to JS-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

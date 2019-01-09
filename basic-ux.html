@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Title of page-->
+    <title> About me. Page: 03 </title>
+</head>
+
+
+<body>
+    <header>
+
+            <label  onclick="openNav()">&#9776;</label>
+
+
+        <div id="nav" class="overlayout">
+            <a href="#" class="close-btn" onclick="closeNav()">&times;</a>
+
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="projects.html"> Projects</a>
+                <a href="me.html">About me</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <!---- Nav for min-width:750px and more---->
+        <div id="nav2">
+            <a href="index.html">Home</a>
+            <a href="projects.html"> Projects</a>
+        </div>
+
+        <!---- Logo with link for home-page---->
+        <a href="index.html">
+            <img id="logo" src="images/me_logo-black.png" alt="mylogo"></a>
+
+        <!---- Nav for min-width:750px and more---->
+        <div id="nav3">
+            <a href="me.html">About me</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+
+    <main class="area-main">
+        <div class="page-color">
+            <div class="container">
+                <div class="project">
+                    <h1>Basic UX</h1>
+                    <img width="300" src="images/ux1.png" alt="basic-ux">
+
+                    <p>This theme was about understending user needs and also keeping in mind the business goal. </p>
+                </div>
+
+                <div class="project">
+                    <h2>Design Sprint</h2>
+
+                    <img width="200" src="images/fronter.png" alt="fronter">
+                    <p>For this project I was to develop a prototype of an improved Fronter.<br>
+                        I added some improvements like fingerprint login, notification system, chat, reminder and a different system of crating projects and shared projects.</p>
+
+                    <div class="buttons">
+                        <a href="https://xd.adobe.com/view/e1692ba5-e554-4d55-5cde-f203236d7b4c-9758/" target="_blank">Prototype</a>
+                    </div>
+                </div>
+
+
+                <div class="project">
+                    <h2>Web prototype</h2>
+
+                    <img width="250" src="images/kea.png" alt="kea">
+                    <p>Here we had to code a functional digital solution for the prototype. We improved the structure, we used the icons and KEA representative colors. </p>
+
+                    <div class="buttons">
+                        <a href="http://stefania-olteanu.dk/fronter/" target="_blank">Prototype</a>
+
+                        <a href="https://github.com/StefaniaJ/fronter" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+
+                <div class="project">
+                    <h2>Native app</h2>
+
+                    <img width="200" src="images/app.png" alt="app">
+                    <p>In this group project we created a nativ app for android and the goal was to have an app where the KEA students can upload their work and the company can search throught topics and if they find something intersing, they can contact that person. </p>
+
+                    <div class="buttons">
+                        <a href="https://xd.adobe.com/view/db99b92a-b032-4e10-6184-1f05c396f568-ada8/" target="_blank">Prototype</a>
+
+                        <a href="http://stefania-olteanu.dk/files/04.04.02Theme_documentation-Janina%20Stefania%20Olteanu.pdf" target="_blank">PDF</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button-go to top-->
+            <button onclick="topFunction()" id="Btn-top" title="Go to top">Top</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <a href="https://www.facebook.com/Stefania.Stefiis" target="_blank">
+                <img style="width: 20px" src="images/facebook-logo_318-49940.jpg" alt="facebook-icon">
+            </a>
+
+            <a href="https://www.instagram.com/stefi_stefs/?hl=ro" target="_blank">
+                <img style="width: 20px" src="images/instaa.jpg" alt="instagram-icon">
+            </a>
+
+            <a href="https://www.linkedin.com/in/janina-stefania-olteanu-17a67216b/" target="_blank">
+                <img style="width: 20px" src="images/linkedin.jpg" alt="linkedin-icon">
+            </a>
+        </div>
+    </footer>
+    <!--Link to JS-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
